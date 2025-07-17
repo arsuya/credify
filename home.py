@@ -4,6 +4,9 @@ import pandas as pd
 from PIL import Image
 
 def run():
+
+    st.markdown("<h1 style='text-align: center;'>Welcome!</h1>", unsafe_allow_html=True)
+    st.image("credify.png", use_column_width=False, width=200)
     # Main content
     st.title("Welcome!")
     # img_url = "homepictfinpro.jpg"
@@ -45,7 +48,7 @@ def run():
     st.markdown("""
     ---
     ### How to use the Dashboard
-    - Click on the options in the **sidebar** to explore EDA, make predictions or looking for the SHAP (SHapley Additive exPlanations) section.
+    - Click on the options in the **sidebar** to explore EDA and make predictions 
     - Try uploading various data samples to get different results.
 
     Thank you for visiting this dashboard. See you again next time!
