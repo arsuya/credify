@@ -187,6 +187,7 @@ def show():
         custom_title("Do extreme income values skew the distribution? Should they be capped or log-transformed?")
         custom_md("Exploring transformation strategies for skewed variables.")
         st.markdown("---")
+        custom_title("Graph")
         pl.EDA_7_2(data)
 
     elif eda_option == "Which variables are most strongly correlated with the target or credit approval?":
