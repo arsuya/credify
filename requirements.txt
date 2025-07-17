@@ -5,3 +5,4 @@ xlsxwriter>=3.0.0
 openpyxl>=3.1.0
 lightgbm==4.6.0
 seaborn
+statsmodels
