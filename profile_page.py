@@ -22,7 +22,7 @@ def show():
             """, unsafe_allow_html=True)
 
     # Display team members using updated & resized images
-    display_member(col1, "KakLis.jpg", "Lis Wahyuni", "Mentor")
+    display_member(col1, "KakLis.jpg", "Lis Wahyuni      ", "Mentor")
     display_member(col2, "Arvin.png", "Arvin Surya Wibowo", "Data Scientist")
     display_member(col3, "Matthew.png", "Matthew Farrel Dharsono", "Data Analyst")
     display_member(col4, "Luthfi.png", "Luthfi Nadyan Putra", "Data Engineer")
