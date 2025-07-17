@@ -348,7 +348,7 @@ def EDA_7_1 (data):
 
 def EDA_7_2 (data):
     income_skew = skew(data['income'].dropna())
-    st.markdown(f"**Skewness of income:** {income_skew:.4f}")
+    st.metric(label="Skewness of Income", value=f"{income_skew:.4f}")
 
 def EDA_8_1_1 (data):
     # Step 1: Map target variable
