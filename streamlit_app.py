@@ -8,7 +8,7 @@ st.set_page_config(page_title = "Credit Risk Analysis & Modelling",
 with st.sidebar:
     
     logo = Image.open("credify.png")
-    st.sidebar.image(logo, use_column_width=True)
+    st.sidebar.image(logo, width=150)
     st.write('# Navigation Sidebar')
     navigation = st.radio('Page', ['Home', 
                                    'Exploratory Data Analysis (EDA) Section', 
