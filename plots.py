@@ -280,13 +280,13 @@ def EDA_4_2 (data): # Please Revisit
         data=data,
         x=abs(data['days_employed'] / 365),
         y='income',
-        fit_reg=False  
+        fit_reg=False,  # Matikan garis regresi
+        scatter_kws={'color': 'green'}  # Ubah warna titik jadi hijau
     )
     plt.title('Income vs Years Employed')
     plt.xlabel('Years Employed')
     plt.ylabel('Income')
-    plt.grid(True)
-    plt.show()
+    plt.tight_layout()
     st.pyplot(plt)
 
 def EDA_5_1 (data):
@@ -335,11 +335,10 @@ def EDA_6_2 (data):
 def EDA_7_1 (data):
     features = ['child_number', 'income', 'family_size']
 
-    # Make the plot side by side
     fig, axes = plt.subplots(1, len(features), figsize=(18, 6))
 
     for i, feature in enumerate(features):
-        sns.boxplot(y=data[feature], ax=axes[i])
+        sns.boxplot(y=data[feature], ax=axes[i], color='green')  # Tambah warna hijau
         axes[i].set_title(f'Boxplot of {feature}')
         axes[i].set_xlabel(feature)
         axes[i].grid(True)
