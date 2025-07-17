@@ -5,7 +5,9 @@ def run():
     st.markdown("<h1 style='font-size: 62px;text-align: center;'>Welcome to Credify!</h1>", unsafe_allow_html=True)
     
     # Project logo/image
-    st.image("credify.png", use_container_width=True)
+    left_co, cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("credify.png", width=300) 
 
     # Introduction paragraph
     paragraph1 = "This interactive dashboard provides an end-to-end view of our credit scoring project, focusing on predicting whether a customer is eligible for a credit card based on key financial and demographic information."
