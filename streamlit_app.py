@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import home, prediction, eda
+import home, prediction, eda, profile_page
 
 st.set_page_config(page_title = "Credit Risk Analysis & Modelling",
                    layout = 'centered',
@@ -12,7 +12,8 @@ with st.sidebar:
     st.write('# Navigation Sidebar')
     navigation = st.radio('Page', ['Home', 
                                    'Exploratory Data Analysis (EDA) Section', 
-                                   'Credit Risk Analysis Prediction Section'])
+                                   'Credit Risk Analysis Prediction Section',
+                                   'About Our Team'])
 
 if navigation == 'Exploratory Data Analysis (EDA) Section':
     eda.show()
@@ -22,3 +23,6 @@ if navigation == 'Credit Risk Analysis Prediction Section':
 
 if navigation == 'Home':
     home.run()
+
+if navigation == 'About Our Team':
+    profile_page.show()
