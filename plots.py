@@ -274,17 +274,19 @@ def EDA_4_1 (data):
 
 def EDA_4_2 (data): # Please Revisit
     # Convert days_employed to years as a standalone object
-    # years_employed = data['days_employed'].abs() / 365
 
     plt.figure(figsize=(8, 6))
-    sns.regplot(data=data, x=abs(data['days_employed'] / 365), 
-                y='income',
-                scatter_kws={'alpha':0.5}, 
-                line_kws={'color':'green'})
+    sns.regplot(
+        data=data,
+        x=abs(data['days_employed'] / 365),
+        y='income',
+        fit_reg=False  
+    )
     plt.title('Income vs Years Employed')
     plt.xlabel('Years Employed')
     plt.ylabel('Income')
     plt.grid(True)
+    plt.show()
     st.pyplot(plt)
 
 def EDA_5_1 (data):
