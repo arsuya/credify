@@ -5,8 +5,6 @@ from PIL import Image
 
 def run():
 
-    st.markdown("<h1 style='text-align: center;'>Welcome!</h1>", unsafe_allow_html=True)
-    st.image("credify.png", use_column_width=False, width=200)
     # Main content
     st.title("Welcome!")
     # img_url = "homepictfinpro.jpg"
