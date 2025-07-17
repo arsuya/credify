@@ -10,6 +10,7 @@ from scipy.stats import skew
 
 import streamlit as st
 
+
 def custom_md(text):
     st.markdown(f"<div class='custom-base custom-markdown'>{text}</div>", unsafe_allow_html=True)
 def custom_title(text):
@@ -346,9 +347,7 @@ def EDA_7_1 (data):
 
 def EDA_7_2 (data):
     income_skew = skew(data['income'].dropna())
-    col1, col2, col3 = st.columns([2, 1, 2])  
-    with col2:  
-        st.metric(label="Skewness of Income", value=f"{income_skew:.4f}")
+    st.markdown(f"**Skewness of income:** {income_skew:.4f}")
 
 def EDA_8_1_1 (data):
     # Step 1: Map target variable
@@ -419,3 +418,4 @@ def EDA_8_2 (data):
     
     st.subheader("Table")
     st.dataframe(sorted_vif)
+
