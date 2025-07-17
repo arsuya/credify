@@ -1,7 +1,7 @@
 import streamlit as st
 
 def show():
-    st.markdown("<h1 style='font-size: 48px; text-align: center;'>MEET OUR DATA TEAM</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='font-size: 48px; text-align: center;'>Meet Our Data Team</h1>", unsafe_allow_html=True)
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
