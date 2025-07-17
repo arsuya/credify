@@ -7,7 +7,7 @@ st.set_page_config(page_title = "Credit Risk Analysis & Modelling",
                    layout = 'centered',
                    initial_sidebar_state = 'expanded')
 
-def sidebar_logo(image_path, width=150):
+def sidebar_logo(image_path, width):
     # Konversi gambar ke base64 agar bisa dimasukkan ke HTML
     with open(image_path, "rb") as f:
         data = f.read()
@@ -24,7 +24,7 @@ def sidebar_logo(image_path, width=150):
 with st.sidebar:
     
     logo = Image.open("credify.png")
-    st.sidebar.image(logo, width=50)
+    sidebar_logo(logo, width=50)
     st.write('# Navigation Sidebar')
     navigation = st.radio('Page', ['Home', 
                                    'Exploratory Data Analysis (EDA) Section', 
