@@ -406,9 +406,7 @@ def EDA_7_1 (data):
 
 def EDA_7_2 (data):
     income_skew = skew(data['income'].dropna())
-    col1, col2, col3 = st.columns([1, 3, 1])  
-    with col2:  
-        st.metric(label="Skewness of Income", value=f"{income_skew:.4f}")
+    st.metric(label="Skewness of Income", value=f"{income_skew:.4f}")
 
 def EDA_8_1 (data):
     # Step 1: Map target variable
