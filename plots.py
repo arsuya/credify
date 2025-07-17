@@ -274,7 +274,7 @@ def EDA_4_1 (data):
 
 def EDA_4_2 (data): # Please Revisit
     # Convert days_employed to years as a standalone object
-    years_employed = data['days_employed'].abs() / 365
+    # years_employed = data['days_employed'].abs() / 365
 
     plt.figure(figsize=(8, 6))
     sns.regplot(data=data, x=abs(data['days_employed'] / 365), 
