@@ -12,14 +12,14 @@ with st.sidebar:
         st.image("credify.png", width=300) 
     st.write('# Navigation Sidebar')
     navigation = st.radio('Page', ['Home', 
-                                   'Exploratory Data Analysis (EDA) Section', 
-                                   'Credit Risk Analysis Prediction Section',
+                                   'Exploratory Data Analysis (EDA)', 
+                                   'Credit Risk Analysis Prediction',
                                    'About Our Team'])
 
-if navigation == 'Exploratory Data Analysis (EDA) Section':
+if navigation == 'Exploratory Data Analysis (EDA)':
     eda.show()
 
-if navigation == 'Credit Risk Analysis Prediction Section':
+if navigation == 'Credit Risk Analysis Prediction':
     prediction.run()
 
 if navigation == 'Home':
